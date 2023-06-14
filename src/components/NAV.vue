@@ -14,7 +14,7 @@ import { RouterLink, RouterView } from 'vue-router';
                 <div class="link">
                     <RouterLink class="router" to="">Contacto</RouterLink>
                 </div>
-                <div class="link"> <a class="router" href="src/assets/ERICKCV4.1.2.pdf" download>Descargar archivo</a></div>
+                <div class="link"> <a class="router" href="src/assets/ERICKCV4.1.2.pdf" download>Descargar CV</a></div>
 
             </div>
         </div>
@@ -31,18 +31,18 @@ import { RouterLink, RouterView } from 'vue-router';
 }
 
 .nav {
-    background: rgba(255, 255, 255, 0.14);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(6.1px);
-    -webkit-backdrop-filter: blur(6.1px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
     position: fixed;
     z-index: 3;
     min-width: 100%;
-
+    background: rgba(255, 255, 255, 0.09);
+    border-radius: 0 0 16px 0;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.3px);
+    -webkit-backdrop-filter: blur(10.3px);
+    border: 1px solid rgba(255, 255, 255, 1);
 }
 
-.contentNav{
+.contentNav {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -55,15 +55,9 @@ import { RouterLink, RouterView } from 'vue-router';
 }
 
 .link {
-    margin-left: 30px;
-    font-size: 20px;
+    margin-left: 80px;
+    font-size: 25px;
     transition: 1s ease;
-}
-
-.router {
-    text-decoration: none;
-    color: black;
-
 }
 
 .link:hover {
@@ -72,4 +66,11 @@ import { RouterLink, RouterView } from 'vue-router';
     transform: scale(1.2);
     transition: 1s ease;
 }
+.router {
+    text-decoration: none;
+    color: white;
+    Font-family: monospace;
+}
+
+
 </style>

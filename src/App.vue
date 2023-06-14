@@ -8,6 +8,8 @@ import HomeView from './views/HomeView.vue';
     <Nav></Nav>
   </header>
   <HomeView></HomeView>
+
+  
 </template>
 
 <style scoped>
@@ -19,4 +21,6 @@ import HomeView from './views/HomeView.vue';
 	border: none;
 	outline: none;
 }
+
+
 </style>
