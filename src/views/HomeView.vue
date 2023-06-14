@@ -7,7 +7,7 @@ export default {
     writeDefaultValuesTerminal() {
       const textarea = this.$refs.textarea;
       const testString =
-        "Last Login: jun 14 22:37:00 on Portfolio \n$Bienvenid@s_a _mi _portfolio! ~ %\n$cd/Soy_Erick_Crespin...10% \n$y aunque esta no sea una terminal de verdad...30% \n$te invito a que eches un pequeño vistazo...50% \n$en el encontraras algunos proyectos en los que e trabajado...70% \n$...:)...100%.";
+        "Last Login: jun 14 22:37:00 on Portfolio \n$Bienvenid@s_a _mi _portfolio! ~ %\n$cd/Soy_Erick_Crespin...10% \n$y aunque esta no sea una terminal de verdad...30% \nesta pagina web si es de verdad y \n$te invito a que eches un pequeño vistazo...50% \n$en el encontraras algunos proyectos en los que e trabajado...70% \n$...:)...100%.";
 
       let counter = 0;
 
