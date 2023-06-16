@@ -1,26 +1,26 @@
 <script setup>
 import Nav from './components/NAV.vue'
 import HomeView from './views/HomeView.vue';
+import Proyectos from './views/Proyectos.vue'
 </script>
 
 <template>
   <header>
     <Nav></Nav>
   </header>
+ <main>
   <HomeView></HomeView>
-
+  <Proyectos></Proyectos>
+ </main>
+  
   
 </template>
 
-<style scoped>
-*{
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	text-decoration: none;
-	border: none;
-	outline: none;
+<style  scoped>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
 
 </style>

@@ -7,7 +7,7 @@ export default {
     writeDefaultValuesTerminal() {
       const textarea = this.$refs.textarea;
       const testString =
-        "Last Login: jun 14 22:37:00 on Portfolio \n$Bienvenid@s_a _mi _portfolio! ~ %\n$cd/Soy_Erick_Crespin...10% \n$y aunque esta no sea una terminal de verdad...30% \n$esta pagina web si es de verdad...40% \n$te invito a que eches un pequeño vistazo...50% \n$en el encontraras algunos proyectos en los que e trabajado...70% \n$...:)...100%.";
+        "Last Login: jun 14 22:37:00 on Portfolio \n$Bienvenid@s_a _mi _portfolio! ~ %\n$cd/Soy_Erick_Crespin...10% \n$y aunque esta no sea una terminal de verdad...30% \n$esta pagina web si es de verdad...40% \n$te invito a que eches un pequeño vistazo...50% \n$en ella encontraras algunos proyectos en los que e trabajado...70% \n$...:)...100%.";
 
       let counter = 0;
 
@@ -25,11 +25,8 @@ export default {
 </script>
 
 <template>
-  <main>
-    <div class="sunset">
-      <div class="mirage"></div>
-    </div>
-    <div class="app">
+    <div class="home">
+     <div class="app">
       <div class="title-bar">
         <button class="close"></button>
         <button class="minimize"></button>
@@ -38,7 +35,12 @@ export default {
       <textarea class="textarea" ref="textarea"></textarea>
      
     </div>
-  </main>
+   
+    <div class="sunset">
+      <div class="mirage"></div>
+    </div>
+  </div> 
+ 
 </template>
 <style>
 @import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
@@ -74,17 +76,14 @@ export default {
   --close-button: #ff605c;
 }
 
-main {
-  margin: 0px;
+.home{
+ 
   height: 100vh;
   overflow: hidden;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  position: relative;
-  z-index: 1;
-
-  /*background-color: var(--bgcolor);*/
+ background-color: var(--bgcolor);
   background: repeating-linear-gradient(
     to bottom,
     var(--bgcolor),
@@ -92,11 +91,16 @@ main {
     var(--sunset-bgcolor) 51%,
     var(--sunset-bgcolor) 100%
   );
+  background-size: cover !important;
 }
 
 .sunset {
-  position: absolute;
-  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 0;
   width: var(--sunset-size);
   height: var(--sunset-size);
   background: linear-gradient(
@@ -111,6 +115,7 @@ main {
 
   background-clip: border-box;
   border-radius: var(--sunset-size);
+  
 }
 
 .sunset:before {
@@ -119,9 +124,10 @@ main {
 }
 
 .mirage {
-  position: fixed;
+  margin-top:230px ;
+  position:relative;
   bottom: 0;
-  z-index: 2;
+  z-index: 0;
   width: 100%;
   height: 50%;
   border-radius: 0px 0px var(--sunset-size) var(--sunset-size);
@@ -136,6 +142,7 @@ main {
   background-size: 100% 200%;
   background-position: 50% 100%;
   animation: kf-bgpan 18s linear infinite;
+  
 }
 
 @-moz-keyframes kf-bgpan {
@@ -168,11 +175,13 @@ main {
   }
 }
 
-.App {
+.app {
+  position: absolute;
+  z-index: 1;
   margin: 10px;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
+ 
 }
 
 .terminal {
@@ -221,7 +230,6 @@ textarea {
   background: var(--title-bar);
 }
 .title-bar {
-  width: 100%;
   border-radius: 5px 5px 0 0;
   padding: 2px 0.1px 8px;
   z-index: 10;
