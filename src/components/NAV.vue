@@ -1,5 +1,4 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router';
 
 
 </script>
@@ -9,10 +8,10 @@ import { RouterLink, RouterView } from 'vue-router';
             <div class="logo"><img style="height: 70px;width: 70px;" src="./icons/Miproyect.png" alt=""></div>
             <div class="links">
                 <div class="link">
-                    <RouterLink class="router" to="/">Home</RouterLink>
+                    <router-link class="router" to="/">Home</router-link>
                 </div>
                 <div class="link">
-                    <RouterLink class="router" to="">Contacto</RouterLink>
+                    <router-link class="router" to="/Proyectos">Contacto</router-link>
                 </div>
                 <div class="link"> <a class="router" href="src/assets/ERICKCV4.1.2.pdf" download>Descargar CV</a></div>
 
