@@ -209,7 +209,7 @@ button::after {
 .carousel-radio:checked + label {
   cursor: unset;
   top: 0%;
-  left: calc((100% - var(--width)) / 1.8);
+  left: calc((100% - var(--width)) / 2);
   margin-left: 0%;
   margin-right: 0%;
   width: var(--width);
@@ -231,7 +231,7 @@ button::after {
   cursor: pointer;
   position: relative;
   left: var(--width);
-  margin-left: calc(var(--width) * -2);
+  margin-left: calc(var(--width) * -1);
   margin-right: calc(var(--width) - (100% - var(--width)) / 2);
   transform: translate(0) scale(var(--scale));
   overflow: hidden;
