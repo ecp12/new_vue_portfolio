@@ -136,12 +136,12 @@
   height: 40.5%;
   color: rgb(0, 0, 0);
   margin-top: -250px;
-  background: rgba(255, 255, 255, 0.592);
+  background: rgba(255, 255, 255, 0.842);
   border-radius: 20px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.466);
   object-fit: unset;
   text-decoration: none;
   font-family: monospace;
@@ -160,21 +160,23 @@
 }
 
 .paragraft {
-  font-size: 20px;
-  font-weight: 900;
+  font-size: 22px;
+  font-weight: 700;
   margin-top: 20px;
+  color:rgb(0, 0, 0);
 }
 
 .button{
+ 
   margin-top: 30px;
   background-color: rgb(255, 255, 255) ;
   padding: 10px;
   font-size: 20px;
   font-weight: 900;
   border-radius: 20px;
-  border: 3px solid transparent;
+  border: 3px solid #6c6c6c93 ;
   border-radius: 8px;
-  background: #ffffff;
+  background: #bebdbd;
   background-clip: padding-box;
   color: #010101;
   outline: none;
@@ -193,10 +195,11 @@ button::after {
 }
 
 .button:hover {
+  border: 3px solid  #ff9d00 ;
   color: #ffffff;
   background: linear-gradient(to right, #E8A333,#D84B45);
-  background-size: 104%;
-  background-position: -4px;
+  background-size: 120%;
+  background-position: -2px;
 }
 
 .carousel-radio {
@@ -206,7 +209,7 @@ button::after {
 .carousel-radio:checked + label {
   cursor: unset;
   top: 0%;
-  left: calc((100% - var(--width)) / 2);
+  left: calc((100% - var(--width)) / 1.8);
   margin-left: 0%;
   margin-right: 0%;
   width: var(--width);
@@ -228,7 +231,7 @@ button::after {
   cursor: pointer;
   position: relative;
   left: var(--width);
-  margin-left: calc(var(--width) * -1);
+  margin-left: calc(var(--width) * -2);
   margin-right: calc(var(--width) - (100% - var(--width)) / 2);
   transform: translate(0) scale(var(--scale));
   overflow: hidden;

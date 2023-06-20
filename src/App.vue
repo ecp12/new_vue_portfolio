@@ -1,5 +1,6 @@
 <script setup>
 import Nav from './components/NAV.vue'
+import ContatView from './views/ContatView.vue';
 import HomeView from './views/HomeView.vue';
 import Proyectos from './views/Proyectos.vue'
 </script>
@@ -11,6 +12,7 @@ import Proyectos from './views/Proyectos.vue'
  <main>
   <HomeView></HomeView>
   <Proyectos></Proyectos>
+  <ContatView></ContatView>
  </main>
   
   

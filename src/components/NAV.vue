@@ -11,7 +11,7 @@
                     <router-link class="router" to="/">Home</router-link>
                 </div>
                 <div class="link">
-                    <router-link class="router" to="/Proyectos">Contacto</router-link>
+                    <router-link class="router" to="/contat">Contacto</router-link>
                 </div>
                 <div class="link"> <a class="router" href="src/assets/ERICKCV4.1.2.pdf" download>Descargar CV</a></div>
 

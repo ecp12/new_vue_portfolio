@@ -7,7 +7,7 @@ export default {
     writeDefaultValuesTerminal() {
       const textarea = this.$refs.textarea;
       const testString =
-        "Last Login: jun 14 22:37:00 on Portfolio \n$Bienvenid@s_a _mi _portfolio! ~ %\n$cd/Soy_Erick_Crespin...10% \n$y aunque esta no sea una terminal de verdad...30% \n$esta pagina web si es de verdad...40% \n$te invito a que eches un pequeño vistazo...50% \n$en ella encontraras algunos proyectos en los que e trabajado...70% \n$...:)...100%.";
+        "Last Login: jun 14 22:37:00 on Portfolio\n\n$Bienvenid@s_a _mi _portfolio! ~ %\n$cd/Soy_Erick_Crespin...10% \n$y aunque esta no sea una terminal de verdad...30% \n$esta pagina web si es de verdad...40% \n$te invito a que eches un pequeño vistazo...50% \n$en ella encontraras algunos proyectos en los que e trabajado...70% \n$...:)...100%.";
 
       let counter = 0;
 
@@ -212,16 +212,14 @@ textarea {
   background-color: #383838eb ;
   font-family: "fira-mono", "PT Sans Mono", "Monaco", "Iconsolas",
     "Droid Sans Mono", monospace;
-  font-size: 20px;
+  font-size: 24px;
   border-radius: 0 0 10px 10px;
   padding: 10px;
   height: 350px;
   width: 600px;
-
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
   align-items: center;
 }
 
@@ -232,7 +230,6 @@ textarea {
 .title-bar {
   border-radius: 5px 5px 0 0;
   padding: 2px 0.1px 8px;
-  z-index: 10;
   cursor: move;
 }
 .window-footer {
