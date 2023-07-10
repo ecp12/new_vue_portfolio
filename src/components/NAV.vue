@@ -13,7 +13,7 @@
                 <div class="link">
                     <router-link class="router" to="/contat">Contacto</router-link>
                 </div>
-                <div class="link"> <a class="router" href="src/assets/CVERICK_4.1.4.pdf" download>Descargar CV</a></div>
+                <div class="link"> <a class="router" href="../../src/assets/CVERICK_4.1.4.pdf" download>Descargar CV</a></div>
 
             </div>
         </div>
