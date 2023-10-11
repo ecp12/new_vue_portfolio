@@ -200,7 +200,7 @@ export default {
   animation: fadein 2s;
 }
 
-textarea {
+.textarea {
   color: #ffffff;
   border: none ;
   overflow: hidden ;
