@@ -32,7 +32,7 @@ export default {
         <button class="minimize"></button>
         <button class="maximize"></button>
       </div>
-      <textarea class="textarea" ref="textarea"></textarea>
+      <textarea class="textare" ref="textarea"></textarea>
      
     </div>
    
@@ -200,7 +200,7 @@ export default {
   animation: fadein 2s;
 }
 
-.textarea {
+.textare {
   color: #ffffff;
   border: none ;
   overflow: hidden ;
